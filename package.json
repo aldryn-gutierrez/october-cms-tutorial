@@ -1,0 +1,28 @@
+{
+  "name": "myoctober",
+  "version": "1.0.0",
+  "description": "Laravel Elixir",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "laravel-elixir": "^6.0.0-18",
+    "laravel-elixir-livereload": "^1.1.6",
+    "laravel-mix": "^2.1.11"
+  },
+  "dependencies": {
+    "semantic-ui-css": "^2.3.1"
+  }
+}

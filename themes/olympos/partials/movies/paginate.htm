@@ -1,0 +1,10 @@
+<label>Page</label>
+<select class="ui fluid dropdown" name="Filter[page]">
+    {% for i in 1..pages %}
+        <option 
+        	value="{{i}}" 
+        	{% if i == page %} selected {% endif %} >
+			{{ i }}
+		</option>
+    {% endfor %}
+</select>
